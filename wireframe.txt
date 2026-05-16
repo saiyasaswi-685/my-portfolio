@@ -1,0 +1,42 @@
+------------------------------------------------
+| NAVBAR                                      |
+| Logo | About | Skills | Projects | Contact |
+------------------------------------------------
+
+| HERO SECTION                                |
+|---------------------------------------------|
+|               Name                          |
+|        Aspiring Cloud Engineer              |
+|           [ View My Work ]                  |
+|         ⭐ Fade-in Animation                 |
+------------------------------------------------
+
+| ABOUT SECTION                               |
+|---------------------------------------------|
+| About Me Heading                            |
+| Short Bio Paragraph                         |
+|         ⭐ Scroll Reveal Animation           |
+------------------------------------------------
+
+| SKILLS SECTION                              |
+|---------------------------------------------|
+| AWS | Google Cloud | GitHub | Java | C++    |
+| Python | Postman                            |
+|         ⭐ Hover Effects                     |
+------------------------------------------------
+
+| PROJECTS SECTION                            |
+|---------------------------------------------|
+| [ Project Card ]   [ Project Card ]         |
+| Vision Guard AI   Face Recognition System   |
+| GitHub Buttons                              |
+|         ⭐ Card Hover Animation              |
+------------------------------------------------
+
+| CONTACT SECTION                             |
+|---------------------------------------------|
+| Phone Number                                |
+| Email                                       |
+| GitHub                                      |
+| LinkedIn                                    |
+------------------------------------------------
