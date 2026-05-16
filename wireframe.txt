@@ -1,36 +1,68 @@
 ------------------------------------------------
 | NAVBAR                                      |
-| Logo | About | Skills | Projects | Contact |
+| Logo | About | Education | Skills | Projects|
+| Certifications | Contact                    |
 ------------------------------------------------
 
 | HERO SECTION                                |
 |---------------------------------------------|
-|               Name                          |
-|        Aspiring Cloud Engineer              |
-|           [ View My Work ]                  |
+|              Profile Photo                  |
+|          Bandaru Sai Yasaswi                |
+| AWS Certified Developer                     |
+| Aspiring Cloud Engineer                     |
+| [ View My Work ] [ Download Resume ]        |
 |         ⭐ Fade-in Animation                 |
+|         ⭐ Glow Background Effects           |
 ------------------------------------------------
 
 | ABOUT SECTION                               |
 |---------------------------------------------|
 | About Me Heading                            |
-| Short Bio Paragraph                         |
+| Circular Profile Photo                      |
+| Short Professional Bio                      |
+| AWS + Cloud + AI Interests                  |
 |         ⭐ Scroll Reveal Animation           |
+------------------------------------------------
+
+| EDUCATION SECTION                           |
+|---------------------------------------------|
+| B.Tech CSE                                  |
+| Aditya College of Engineering And Technology|
+| CGPA: 8.46                                  |
+|                                             |
+| Intermediate (MPC)                          |
+| Sahasra Junior College                      |
+| CGPA: 9.09                                  |
+|         ⭐ Card Hover Effects                |
+------------------------------------------------
+
+| CERTIFICATIONS SECTION                      |
+|---------------------------------------------|
+| AWS Certified Developer Associate           |
+| RHCSA                                       |
+| IT Specialist – HTML & CSS                  |
+| Clickable Certificate Cards                 |
+|         ⭐ Hover Animations                  |
 ------------------------------------------------
 
 | SKILLS SECTION                              |
 |---------------------------------------------|
-| AWS | Google Cloud | GitHub | Java | C++    |
-| Python | Postman                            |
+| AWS | Google Cloud | GitHub | Java          |
+| C | C++ | Python | Postman                  |
+| Docker | Kubernetes                         |
 |         ⭐ Hover Effects                     |
+|         ⭐ Floating Skill Animation          |
 ------------------------------------------------
 
 | PROJECTS SECTION                            |
 |---------------------------------------------|
 | [ Project Card ]   [ Project Card ]         |
-| Vision Guard AI   Face Recognition System   |
+| Smart Visitor & Threat Detection System     |
+| Vision Guard AI                             |
+| Tech Stack + Descriptions                   |
 | GitHub Buttons                              |
 |         ⭐ Card Hover Animation              |
+|         ⭐ Scroll Reveal Animation           |
 ------------------------------------------------
 
 | CONTACT SECTION                             |
@@ -39,4 +71,10 @@
 | Email                                       |
 | GitHub                                      |
 | LinkedIn                                    |
+|         ⭐ Hover Link Effects                |
+------------------------------------------------
+
+| FOOTER                                      |
+|---------------------------------------------|
+| © 2026 Bandaru Sai Yasaswi                  |
 ------------------------------------------------

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import photo from "./assets/photo.jpg";
 
 function App() {
+
   const skills = [
     "AWS",
     "Google Cloud",
@@ -8,8 +10,10 @@ function App() {
     "Java",
     "C",
     "C++",
-    "Python (Basic)",
+    "Python",
     "Postman",
+    "Docker (Basics)",
+    "Kubernetes (Basics)"
   ];
 
   return (
@@ -67,19 +71,34 @@ function App() {
         </motion.h1>
 
         <p className="relative z-10 text-gray-400 text-lg md:text-2xl mb-6">
-          Aspiring Cloud Engineer
+          AWS Certified Developer • Aspiring Cloud Engineer
         </p>
 
-        <motion.button
+        <motion.a
           whileHover={{
             scale: 1.1,
             boxShadow: "0px 0px 20px rgba(255,255,255,0.5)",
           }}
-          whileTap={{ scale: 0.95 }}
+          href="https://github.com/saiyasaswi-685"
+          target="_blank"
+          rel="noreferrer"
           className="relative z-10 bg-white text-black px-6 py-3 rounded-full font-semibold"
         >
           View My Work
-        </motion.button>
+        </motion.a>
+
+        {/* Resume Button */}
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+          }}
+          href="/resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="mt-6 inline-block border border-white px-6 py-3 rounded-full text-white font-semibold hover:bg-white hover:text-black transition"
+        >
+          Download Resume
+        </motion.a>
 
       </motion.section>
 
@@ -96,20 +115,126 @@ function App() {
           About Me
         </h2>
 
+        {/* Profile Photo */}
+        <div className="flex justify-center mb-8">
+
+          <img
+            src={photo}
+            alt="Sai Yasaswi"
+            className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg"
+          />
+
+        </div>
+
         <p className="text-gray-400 text-lg leading-8">
-          I am an aspiring Cloud Engineer passionate about AWS,
-          cloud computing, and modern web technologies.
+          Computer Science undergraduate passionate about AWS cloud,
+          serverless architectures, AI-powered applications,
+          and scalable cloud systems.
 
-          I enjoy building scalable applications and learning how
-          cloud services work in real-world systems.
+          Skilled in AWS services like EC2, S3, Lambda,
+          DynamoDB, API Gateway, SNS, and CloudWatch.
 
-          Currently, I am improving my skills in AWS,
-          frontend development, and deployment technologies.
+          Interested in cloud engineering, backend systems,
+          distributed systems, and real-time monitoring solutions.
         </p>
 
       </motion.section>
 
-      {/* Skills Section */}
+      {/* Education */}
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="max-w-5xl mx-auto px-6 py-24"
+      >
+
+        <h2 className="text-4xl font-bold mb-8">
+          Education
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8">
+
+          <div className="bg-gray-900 p-6 rounded-2xl">
+
+            <h3 className="text-2xl font-semibold mb-2">
+              B.Tech in Computer Science and Engineering
+            </h3>
+
+            <p className="text-gray-400">
+              Aditya College of Engineering And Technology
+            </p>
+
+            <p className="text-gray-400 mt-2">
+              CGPA: 8.46
+            </p>
+
+          </div>
+
+          <div className="bg-gray-900 p-6 rounded-2xl">
+
+            <h3 className="text-2xl font-semibold mb-2">
+              Intermediate (MPC)
+            </h3>
+
+            <p className="text-gray-400">
+              Sahasra Junior College
+            </p>
+
+            <p className="text-gray-400 mt-2">
+              CGPA: 9.09
+            </p>
+
+          </div>
+
+        </div>
+
+      </motion.section>
+
+      {/* Certifications */}
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="max-w-5xl mx-auto px-6 py-24"
+      >
+
+        <h2 className="text-4xl font-bold mb-12">
+          Certifications
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+
+          <a
+            href="https://www.credly.com/badges/ab571dc9-640e-4066-b6f5-9cd02bccfd34/public_url"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-gray-900 p-6 rounded-2xl hover:bg-white hover:text-black transition"
+          >
+            AWS Certified Developer Associate
+          </a>
+
+          <a
+            href="https://www.credly.com/badges/c9efb57f-f016-41e1-95aa-c953821b44d9/public_url"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-gray-900 p-6 rounded-2xl hover:bg-white hover:text-black transition"
+          >
+            RHCSA – Red Hat Certified System Administrator
+          </a>
+
+          <div
+            className="bg-gray-900 p-6 rounded-2xl hover:bg-white hover:text-black transition"
+          >
+            IT Specialist – HTML & CSS
+          </div>
+
+        </div>
+
+      </motion.section>
+
+      {/* Skills */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -148,7 +273,7 @@ function App() {
 
       </motion.section>
 
-      {/* Projects Section */}
+      {/* Projects */}
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -169,7 +294,31 @@ function App() {
               scale: 1.03,
               y: -10,
             }}
-            className="bg-gray-900 p-6 rounded-2xl hover:shadow-white/20 shadow-lg transition"
+            className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-white/20 transition"
+          >
+
+            <h3 className="text-2xl font-bold mb-4">
+              Smart Visitor & Threat Detection System
+            </h3>
+
+            <p className="text-gray-400 mb-4">
+              Built scalable face recognition system using AWS Rekognition,
+              Lambda, S3, and DynamoDB with real-time alerts.
+            </p>
+
+            <p className="text-sm text-gray-500 mb-6">
+              AWS • Rekognition • Lambda • Flask
+            </p>
+
+          </motion.div>
+
+          {/* Project 2 */}
+          <motion.div
+            whileHover={{
+              scale: 1.03,
+              y: -10,
+            }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-white/20 transition"
           >
 
             <h3 className="text-2xl font-bold mb-4">
@@ -177,12 +326,12 @@ function App() {
             </h3>
 
             <p className="text-gray-400 mb-4">
-              AI-powered safety monitoring project focused on intelligent
-              detection and real-time analysis systems.
+              Real-time helmet violation detection system using
+              YOLOv8, OpenCV, AWS S3, and Streamlit dashboard.
             </p>
 
             <p className="text-sm text-gray-500 mb-6">
-              Python • AI • Computer Vision
+              Python • YOLOv8 • AWS • Streamlit
             </p>
 
             <motion.a
@@ -197,45 +346,11 @@ function App() {
 
           </motion.div>
 
-          {/* Project 2 */}
-          <motion.div
-            whileHover={{
-              scale: 1.03,
-              y: -10,
-            }}
-            className="bg-gray-900 p-6 rounded-2xl hover:shadow-white/20 shadow-lg transition"
-          >
-
-            <h3 className="text-2xl font-bold mb-4">
-              Face Recognition System
-            </h3>
-
-            <p className="text-gray-400 mb-4">
-              Developed a face recognition and authentication system
-              using computer vision technologies.
-            </p>
-
-            <p className="text-sm text-gray-500 mb-6">
-              Python • OpenCV • AI
-            </p>
-
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              href="https://github.com/saiyasaswi-685/face_rekognation_system"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-block bg-white text-black px-5 py-2 rounded-full font-semibold"
-            >
-              GitHub Repo
-            </motion.a>
-
-          </motion.div>
-
         </div>
 
       </motion.section>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -248,43 +363,36 @@ function App() {
           Contact
         </h2>
 
-        <p className="text-gray-400 text-lg mb-6">
-          Feel free to connect with me for collaborations and opportunities.
-        </p>
-
         <div className="flex flex-col gap-4 text-lg">
 
-          <motion.p whileHover={{ scale: 1.05 }}>
+          <p>
             📞 9985176457
-          </motion.p>
+          </p>
 
-          <motion.a
-            whileHover={{ scale: 1.05 }}
+          <a
             href="mailto:saiyasaswibandaru@gmail.com"
             className="hover:text-gray-400 transition"
           >
             ✉️ saiyasaswibandaru@gmail.com
-          </motion.a>
+          </a>
 
-          <motion.a
-            whileHover={{ scale: 1.05 }}
+          <a
             href="https://github.com/saiyasaswi-685"
             target="_blank"
             rel="noreferrer"
             className="hover:text-gray-400 transition"
           >
-            💻 GitHub Profile
-          </motion.a>
+            💻 GitHub
+          </a>
 
-          <motion.a
-            whileHover={{ scale: 1.05 }}
+          <a
             href="https://www.linkedin.com/in/sai-yasaswi-b-a256222a4/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-gray-400 transition"
           >
-            🔗 LinkedIn Profile
-          </motion.a>
+            🔗 LinkedIn
+          </a>
 
         </div>
 
