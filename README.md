@@ -5,9 +5,7 @@ A modern and responsive personal portfolio website built using React, Vite, Tail
 
 ## Live Demo
 
-https://your-vercel-link.vercel.app
-
-(Deploy ayyaka ee link replace cheyyi)
+https://my-portfolio-lovat-sigma.vercel.app/
 
 ---
 
