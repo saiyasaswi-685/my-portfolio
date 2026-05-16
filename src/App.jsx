@@ -58,7 +58,6 @@ function App() {
         className="relative flex flex-col items-center justify-center min-h-screen text-center px-4"
       >
 
-        {/* Glow Background */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-3xl rounded-full"></div>
 
         <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"></div>
@@ -87,22 +86,17 @@ function App() {
           View My Work
         </motion.a>
 
-        {/* Resume Button */}
-        <motion.a
-          whileHover={{
-            scale: 1.1,
-          }}
+        <a
           href="/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
+          download
           className="mt-6 inline-block border border-white px-6 py-3 rounded-full text-white font-semibold hover:bg-white hover:text-black transition"
         >
           Download Resume
-        </motion.a>
+        </a>
 
       </motion.section>
 
-      {/* About Section */}
+      {/* About */}
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -115,7 +109,6 @@ function App() {
           About Me
         </h2>
 
-        {/* Profile Photo */}
         <div className="flex justify-center mb-8">
 
           <img
@@ -133,9 +126,6 @@ function App() {
 
           Skilled in AWS services like EC2, S3, Lambda,
           DynamoDB, API Gateway, SNS, and CloudWatch.
-
-          Interested in cloud engineering, backend systems,
-          distributed systems, and real-time monitoring solutions.
         </p>
 
       </motion.section>
@@ -224,11 +214,14 @@ function App() {
             RHCSA – Red Hat Certified System Administrator
           </a>
 
-          <div
+          <a
+            href="https://www.credly.com/badges/5d4e2294-f9aa-4875-afe9-2f8984a44474/public_url"
+            target="_blank"
+            rel="noreferrer"
             className="bg-gray-900 p-6 rounded-2xl hover:bg-white hover:text-black transition"
           >
             IT Specialist – HTML & CSS
-          </div>
+          </a>
 
         </div>
 
@@ -262,7 +255,7 @@ function App() {
                 type: "spring",
                 stiffness: 300,
               }}
-              className="bg-gray-900 px-6 py-3 rounded-full cursor-pointer shadow-lg hover:bg-white hover:text-black hover:shadow-white/30 transition"
+              className="bg-gray-900 px-6 py-3 rounded-full cursor-pointer shadow-lg hover:bg-white hover:text-black transition"
             >
               {skill}
             </motion.div>
@@ -288,7 +281,7 @@ function App() {
 
         <div className="grid md:grid-cols-2 gap-8">
 
-          {/* Project 1 */}
+          {/* Smart Visitor */}
           <motion.div
             whileHover={{
               scale: 1.03,
@@ -310,9 +303,18 @@ function App() {
               AWS • Rekognition • Lambda • Flask
             </p>
 
+            <a
+              href="https://github.com/saiyasaswi-685/face_rekognation_system"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block bg-white text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
+            >
+              GitHub Repo
+            </a>
+
           </motion.div>
 
-          {/* Project 2 */}
+          {/* Vision Guard */}
           <motion.div
             whileHover={{
               scale: 1.03,
@@ -334,15 +336,14 @@ function App() {
               Python • YOLOv8 • AWS • Streamlit
             </p>
 
-            <motion.a
-              whileHover={{ scale: 1.05 }}
+            <a
               href="https://github.com/saiyasaswi-685/Vision-Guard-AI"
               target="_blank"
               rel="noreferrer"
-              className="inline-block bg-white text-black px-5 py-2 rounded-full font-semibold"
+              className="inline-block bg-white text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
             >
               GitHub Repo
-            </motion.a>
+            </a>
 
           </motion.div>
 
