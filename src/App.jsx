@@ -87,12 +87,13 @@ function App() {
         </motion.a>
 
         <a
-          href="/resume.pdf"
-          download
-          className="mt-6 inline-block border border-white px-6 py-3 rounded-full text-white font-semibold hover:bg-white hover:text-black transition"
-        >
-          Download Resume
-        </a>
+  href="/resume.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="mt-6 inline-block border border-white px-6 py-3 rounded-full text-white font-semibold hover:bg-white hover:text-black transition"
+>
+  Download Resume
+</a>
 
       </motion.section>
 
