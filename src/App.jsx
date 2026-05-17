@@ -92,7 +92,7 @@ function App() {
   rel="noreferrer"
   className="mt-6 inline-block border border-white px-6 py-3 rounded-full text-white font-semibold hover:bg-white hover:text-black transition"
 >
-  Download Resume
+  View MY Resume
 </a>
 
       </motion.section>
